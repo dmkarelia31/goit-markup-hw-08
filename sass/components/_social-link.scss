@@ -1,0 +1,67 @@
+// Ссылки на соц сети - "Наша Команда"
+.person-list__social {
+  display: flex;
+  justify-content: center;
+}
+
+.social__item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  fill: #afb1b8;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: var(--accent-bg-color);
+    fill: #fff;
+  }
+
+  &:focus {
+    background-color: var(--accent-bg-color);
+    fill: #fff;
+    outline: none;
+  }
+}
+
+// Ссылки на соц сети - футер "Присоединяйтесь"
+.network-social {
+  display: flex;
+}
+
+.list__network-social-item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.list__network-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: #fff;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--accent-bg-color);
+    color: currentColor;
+  }
+  &:focus {
+    background-color: var(--accent-bg-color);
+    color: currentColor;
+    outline: none;
+  }
+}

@@ -1,0 +1,32 @@
+.checkbox__modal-checkbox-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  &::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    align-items: center;
+    margin-right: 7px;
+  }
+
+  .checkbox__modal-checkbox:checked + &::before {
+    background-image: url(../images/icon-check.svg);
+    border: none;
+  }
+
+  .checkbox__modal-checkbox:focus + &::before {
+    border-color: #2196f3;
+  }
+
+  .checkbox__policy-link {
+    color: #2196f3;
+    text-decoration: underline;
+  }
+}
