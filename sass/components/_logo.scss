@@ -1,6 +1,16 @@
 // Логотип - шапка
-.header-logo {
-  margin-right: 93px;
+.header-logo { 
+  padding-top: 16px;
+  padding-bottom: 16px;
+ @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 14px;
+ }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
   font-family: "Raleway";
   font-weight: 700;
   font-style: normal;
@@ -9,8 +19,7 @@
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--main-logo-color);
-  padding-top: 24px;
-  padding-bottom: 25px;
+  
   &-color {
     color: #212121;
   }
