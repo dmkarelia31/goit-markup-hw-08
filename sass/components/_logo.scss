@@ -28,18 +28,23 @@
   }
 }
 
-// Логотип - футер
-.footer-logo {
-  display: block;
-  margin-bottom: 20px;
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--main-logo-color);
-  text-decoration: none;
-  &-color {
-    color: #fff;
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-logo-color);
+    text-decoration: none;
+  
+    &-color {
+      color: #fff;
+    }
   }
-}
+
+
+

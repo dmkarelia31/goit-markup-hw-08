@@ -1,3 +1,4 @@
+// Хедер для мобильной версии до 768px
 .navigation {
     display: none;
 }
@@ -6,6 +7,10 @@
       display: none;  
 }        
 
+.header {
+    position: relative;
+    width: 100%;
+}
 
 .header__container{
     display: flex;
@@ -44,10 +49,6 @@
     fill: var(--accent-bg-color);
 }
 
-.header {
-    position: relative;
-}
-
 .mobile-menu__container {
     position: relative;
     padding-top: 48px;
@@ -60,7 +61,7 @@
 
 .mobile-menu {
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     top: 0;
     left: 0;
@@ -166,10 +167,11 @@ margin-bottom: 32px;
 }
 
 
-// Хедер для планшета 768px +
+// Хедер для планшета 768px - 1200px
 @media screen and (min-width: 768px) {
     .navigation {
-        display: block;
+        display: flex;
+        align-items: center;
     }
     .contact {
         display: block;
