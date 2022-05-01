@@ -16,6 +16,7 @@
     margin-right: 7px;
   }
 
+
   .checkbox__modal-checkbox:checked + &::before {
     background-image: url(../images/icon-check.svg);
     border: none;
@@ -28,5 +29,11 @@
   .checkbox__policy-link {
     color: #2196f3;
     text-decoration: underline;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .checkbox__modal-checkbox-text {
+    font-size: 12px;
+    line-height: 1.16;
   }
 }

@@ -295,8 +295,6 @@ ul {
 }
 
 .modal {
-  width: 528px;
-  min-height: 581px;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -306,6 +304,27 @@ ul {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 480px) {
+  .modal {
+    width: 98%;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .modal {
+    width: 450px;
+    min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .close-modal {
@@ -335,13 +354,19 @@ ul {
 
 /* Форма модального окна */
 .form__modal-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 1200px) {
+  .form__modal-title {
+    line-height: 1.5;
+  }
 }
 
 .modal-input-wrap {
@@ -443,6 +468,13 @@ ul {
 .checkbox__modal-checkbox-text .checkbox__policy-link {
   color: #2196f3;
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1200px) {
+  .checkbox__modal-checkbox-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .navigation {
@@ -732,33 +764,6 @@ ul {
   .contact__svg {
     margin-right: 10px;
   }
-}
-
-.hero {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.hero .hero-container__text {
-  width: 696px;
-  margin-left: auto;
-  margin-right: auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
 }
 
 .features {

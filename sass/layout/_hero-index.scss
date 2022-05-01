@@ -1,30 +1,50 @@
 // Герой (без кнопки)
-.hero {
-  max-width: 1600px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: #2f303a;
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url(../images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  .hero-container__text {
-    width: 696px;
-    margin-left: auto;
-    margin-right: auto;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #ffffff;
-  }
-}
+
+  // .hero {
+  // max-width: 1600px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // text-align: center;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  // background-color: #2f303a;
+  // background-image: linear-gradient(
+  //     rgba(47, 48, 58, 0.4),
+  //     rgba(47, 48, 58, 0.4)
+  //   ), url(../../images/hero.jpg);
+  // background-repeat: no-repeat;
+  // background-position: center;
+  // background-size: cover;
+  // }
+
+
+
+// @media screen and (max-width: 767px) {
+//   .hero{
+//   background-image: url(../../images/heromobile.jpg);
+//   }
+// }
+
+// @media (min-device-pixel-ratio: 2),
+// (min-resolution: 192dpi),
+// (min-resolution: 2dppx) {
+//   .hero {
+//   background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+//     rgba(47, 48, 58, 0.4)),
+//   url(../../images/heromobile@2x.jpg)
+//   }
+// }
+
+// .hero-container__text {
+//     width: 696px;
+//     margin-left: auto;
+//     margin-right: auto;
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.36;
+//     text-align: center;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
+//     color: #ffffff;
+//   }
+
