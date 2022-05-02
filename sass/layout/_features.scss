@@ -1,22 +1,20 @@
-Преимущества
-
-.features {
-  padding-top: 94px;
-  &__container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  &-icon {
-    width: 270px;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f5f4fa;
-    border-radius: 4px;
-    margin-bottom: 30px;
-  }
-}
+// .features {
+//   padding-top: 94px;
+//   &__container {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+//   &-icon {
+//     width: 270px;
+//     height: 120px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: #f5f4fa;
+//     border-radius: 4px;
+//     margin-bottom: 30px;
+//   }
+// }
 @media screen and (max-width: 768px) {
   .features__container {
     text-align: center;
@@ -27,37 +25,56 @@
     margin-bottom: 30px;
   }
   .features-title {
-    margin-top: 30px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+  .features-icon {
+    width: 100%;
+    height: 120px;
+    display: flex;
   }
 }
 
-// .features-list {
-//   & + & {
-//     margin-left: 30px;
-//   }
-// }
+@media screen and (min-width: 1200px) {
+  .features__container {
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .features-list {
+    & + & {
+      margin-left: 30px;
+  }
+}
+  .features-icon {
+    width: 270px;
+    height: 120px;
+    display: flex;
+  }
+}
 
 .features {
   li h3 {
     list-style: none;
     text-transform: uppercase;
-
-    &-title {
-      // margin-bottom: 10px;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 16px;
-      letter-spacing: 0.03em;
-      color: #212121;
-    }
   }
 }
-
+.features-title {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
 .features p {
   text-align: left;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: #757575;
 }
+.features-icon {
+    justify-content: center;
+    align-items: center;
+    background: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
