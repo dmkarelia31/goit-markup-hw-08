@@ -779,7 +779,7 @@ ul {
   background-size: cover;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .hero {
     width: 100%;
     height: 400px;
@@ -789,7 +789,7 @@ ul {
   }
 }
 
-@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+@media screen and (max-width: 768px) and (min-device-pixel-ratio: 2), screen and (max-width: 768px) and (min-resolution: 192dpi), screen and (max-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero-mobile@2x.jpg);
   }
@@ -853,15 +853,18 @@ ul {
   }
 }
 
+Преимущества
 .features {
   padding-top: 94px;
 }
 
+Преимущества
 .features__container {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
+Преимущества
 .features-icon {
   width: 270px;
   height: 120px;
@@ -873,8 +876,19 @@ ul {
   margin-bottom: 30px;
 }
 
-.features-list + .features-list {
-  margin-left: 30px;
+@media screen and (max-width: 768px) {
+  .features__container {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .features-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .features-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
 }
 
 .features li h3 {
@@ -883,7 +897,6 @@ ul {
 }
 
 .features li h3-title {
-  margin-bottom: 10px;
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -892,6 +905,7 @@ ul {
 }
 
 .features p {
+  text-align: left;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;

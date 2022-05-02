@@ -1,9 +1,10 @@
-// Преимущества
+Преимущества
+
 .features {
   padding-top: 94px;
   &__container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
   &-icon {
     width: 270px;
@@ -16,12 +17,26 @@
     margin-bottom: 30px;
   }
 }
-
-.features-list {
-  & + & {
-    margin-left: 30px;
+@media screen and (max-width: 768px) {
+  .features__container {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .features-list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .features-title {
+    margin-top: 30px;
+    margin-bottom: 10px;
   }
 }
+
+// .features-list {
+//   & + & {
+//     margin-left: 30px;
+//   }
+// }
 
 .features {
   li h3 {
@@ -29,7 +44,7 @@
     text-transform: uppercase;
 
     &-title {
-      margin-bottom: 10px;
+      // margin-bottom: 10px;
       font-weight: bold;
       font-size: 14px;
       line-height: 16px;
@@ -40,6 +55,7 @@
 }
 
 .features p {
+  text-align: left;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
