@@ -1,12 +1,18 @@
 
 .footer {
-  
     background-color: #2f303a;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 15px;
     padding-right: 15px;
 }
+@media screen and (max-width: 768px) {
+  .footer{
+  padding-left: 0;
+  padding-right: 0;
+  }
+}
+  
 
 .footer-container {
     display: block;
