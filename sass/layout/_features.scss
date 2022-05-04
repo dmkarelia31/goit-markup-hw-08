@@ -5,10 +5,10 @@
   }
 }
 
-  .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .features-title {
   margin-top: 30px;
@@ -16,6 +16,9 @@
 }
 
 .features p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   text-align: left;
   color: #757575;
 }

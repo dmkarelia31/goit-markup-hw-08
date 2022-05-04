@@ -1,7 +1,17 @@
 // Ссылки на соц сети - "Наша Команда"
-.person-list__social {
-  display: flex;
-  justify-content: center;
+  .person-list__social {
+    display: flex;
+    justify-content: center;
+  }
+@media screen and (max-width: 1200px) {
+  .person-list__social {
+  padding-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .person-list__social {
+    padding-bottom: 30px;
+  }
 }
 
 .social__item {
