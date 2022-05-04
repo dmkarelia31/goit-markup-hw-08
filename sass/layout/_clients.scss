@@ -1,4 +1,5 @@
 // Клиенты
+
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -11,48 +12,77 @@
     color: #212121;
     margin-bottom: 50px;
   }
-  // &-list {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  // }
-}
-
-@media screen and (max-width: 768px) {
-  .clients {
-  padding: 60px 15px;
-  &__title {
-    margin-bottom: 30px;
-  }
   &-list {
     display: flex;
-    flex-wrap: wrap;
-   
     justify-content: center;
     align-items: center;
-    margin-left: -30px;
-    margin-top: -30px;
   }
-  .clients-list__item {
-    flex-basis: calc(100% / 3 - 30px);
-    margin-left: 30px;
-    margin-top: 30px;
+}
+
+// 0 - 768px
+@media screen and (max-width: 768px) {
+    .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    &__title {
+      font-size: 28px;
+      line-height: 1.18;
+      margin-bottom: 30px;
+    }
+    &-list {
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+    .clients-list__item {
+      flex-basis: calc(100% / 2 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+    .clients-list__icon {
+      width: 210px;
+      height: 92px;
+    }
   }
+}
+// 768px - 1200px
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .clients {
+      padding-top: 60px;
+      padding-bottom: 60px;
+
+    &__title {
+      font-size: 28px;
+      line-height: 1.18;
+      margin-bottom: 30px;
+    }
+
+    &-list {
+      flex-wrap: wrap;
+      margin-left: -30px;
+      margin-top: -30px;
+    }
+
+    .clients-list__item {
+      flex-basis: calc(100% / 3 - 30px);
+      margin-left: 30px;
+      margin-top: 30px;
+    }
+
+    .clients-list__icon {
+      width: 226px;
+      height: 92px;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
   .clients-list__icon {
-    width: 210px;
-    height: 92px;
-}
-}
-}
-
-
-
-
-// .clients-list__item:not(:last-child) {
-//   margin-right: 30px;
-// }
-
-.clients-list__icon {
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
