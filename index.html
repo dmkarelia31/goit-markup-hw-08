@@ -117,6 +117,7 @@
         <!--Преимущества работы с нами-->
         <section class="features">
             <div class="container">
+                
                 <!-- <h2>Наши особенности</h2> -->
 
             <ul class="features__container">
@@ -173,16 +174,49 @@
         <ul class="works-list">
 
             <li class="works-list__works-img">
-                <img src="./images/box1.jpg" alt="Написание кода" width="370">
+                <picture>
+                    <source
+                        srcset="./images/works/works1.jpg 1x, ./images/works/works1@2x.jpg 2x" 
+                        media="(min-width: 1200px)" />
+                    <source
+                        srcset="./images/works/works1.jpg 1x, ./images/works/works1@2x.jpg 2x"
+                        media="(min-width: 768px)" />
+                    <source
+                        srcset="./images/works/works1.jpg 1x, ./images/works/works1@2x.jpg 2x"
+                        media="(max-width: 767px)" />
+                    <img src="/" alt="Написание кода">
+                </picture>
                 <p class="works-category">Десктопные приложения</p>
             </li>
 
             <li class="works-list__works-img">
-                <img src="./images/box2.jpg" alt="Адаптация под различные устройства" width="370">
+                <picture>
+                    <source 
+                    srcset="./images/works/works2.jpg 1x, ./images/works/works2@2x.jpg 2x" 
+                    media="(min-width: 1200px)" />
+                    <source 
+                    srcset="./images/works/works2.jpg 1x, ./images/works/works2@2x.jpg 2x" 
+                    media="(min-width: 768px)" />
+                    <source 
+                    srcset="./images/works/works2.jpg 1x, ./images/works/works2@2x.jpg 2x" 
+                    media="(max-width: 767px)" />
+                    <img src="/" alt="Адаптация под различные устройства">
+                </picture>
                 <p class="works-category">Мобильные приложения</p>
             </li>
             <li class="works-list__works-img">
-                <img src="./images/box3.jpg" alt="Создание дизайна" width="370">
+<picture>
+                    <source 
+                    srcset="./images/works/works3.jpg 1x, ./images/works/works3@2x.jpg 2x" 
+                    media="(min-width: 1200px)" />
+                    <source 
+                    srcset="./images/works/works3.jpg 1x, ./images/works/works3@2x.jpg 2x" 
+                    media="(min-width: 768px)" />
+                    <source 
+                    srcset="./images/works/works3.jpg 1x, ./images/works/works3@2x.jpg 2x" 
+                    media="(max-width: 767px)" />
+                <img src="/" alt="Создание дизайна">
+                </picture>
                 <p class="works-category">Дизайнерские решения</p>
             </li>
         </ul>
@@ -195,7 +229,21 @@
             <h2 class="team__title">Наша команда</h2>
             <ul class="team__person">
                 <li class="team__img">
-                    <img src="./images/person1.jpg" alt="Фото сотрудника 1" width="270">
+                    <picture>
+                    <source 
+                    srcset="./images/person/person-desktop/desktop-person1.jpg 1x, ./images/person/person-desktop/desktop-person1@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                    />
+                    <source
+                        srcset="./images/person/person-tablet/tablet-person1.jpg 1x, ./images/person/person-tablet/tablet-person1@2x.jpg 2x"
+                        media="(min-width: 768px)" 
+                    />
+                    <source
+                        srcset="./images/person/person-mobile/mobile-person1.jpg 1x, ./images/person/person-mobile/mobile-person1@2x.jpg 2x"
+                        media="(max-width: 767px)" 
+                    />
+                    <img src="/" alt="Фото сотрудника 1">
+                    </picture>             
                     <div class="person-card">
                     <h3 class="person-card__name">Игорь Демьяненко</h3>
                     <p class="person-card__profession" lang="en">Product Designer</p>
@@ -236,7 +284,18 @@
                     </div>
                 </li>
                 <li class="team__img">
-                    <img src="./images/person2.jpg" alt="Фото сотрудника 2" width="270">
+                    <picture>
+                        <source
+                            srcset="./images/person/person-desktop/desktop-person2.jpg 1x, ./images/person/person-desktop/desktop-person2@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./images/person/person-tablet/tablet-person2.jpg 1x, ./images/person/person-tablet/tablet-person2@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./images/person/person-mobile/mobile-person2.jpg 1x, ./images/person/person-mobile/mobile-person2@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="/" alt="Фото сотрудника 2">
+                    </picture>
                     <div class="person-card">
                     <h3 class="person-card__name">Ольга Репина</h3>
                     <p class="person-card__profession" lang="en">Frontend Developer</p>
@@ -277,7 +336,18 @@
                 </div>
                 </li>
                 <li class="team__img">
-                    <img src="./images/person3.jpg" alt="Фото сотрудника 3" width="270">
+                    <picture>
+                        <source
+                            srcset="./images/person/person-desktop/desktop-person3.jpg 1x, ./images/person/person-desktop/desktop-person3@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./images/person/person-tablet/tablet-person3.jpg 1x, ./images/person/person-tablet/tablet-person3@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./images/person/person-mobile/mobile-person3.jpg 1x, ./images/person/person-mobile/mobile-person3@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="/" alt="Фото сотрудника 3">
+                    </picture>
                     <div class="person-card">
                     <h3 class="person-card__name">Николай Тарасов</h3>
                     <p class="person-card__profession" lang="en">Marketing</p>
@@ -318,7 +388,18 @@
                 </div>
                 </li>
                 <li class="team__img">
-                    <img src="./images/person4.jpg" alt="Фото сотрудника 4" width="270">
+                    <picture>
+                        <source
+                            srcset="./images/person/person-desktop/desktop-person4.jpg 1x, ./images/person/person-desktop/desktop-person4@2x.jpg 2x"
+                            media="(min-width: 1200px)" />
+                        <source
+                            srcset="./images/person/person-tablet/tablet-person4.jpg 1x, ./images/person/person-tablet/tablet-person4@2x.jpg 2x"
+                            media="(min-width: 768px)" />
+                        <source
+                            srcset="./images/person/person-mobile/mobile-person4.jpg 1x, ./images/person/person-mobile/mobile-person4@2x.jpg 2x"
+                            media="(max-width: 767px)" />
+                        <img src="/" alt="Фото сотрудника 4">
+                    </picture>
                     <div class="person-card">
                     <h3 class="person-card__name">Михаил Ермаков</h3>
                     <p class="person-card__profession" lang="en">UI Designer</p>
