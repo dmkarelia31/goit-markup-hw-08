@@ -1,4 +1,42 @@
 // Примеры работ
+
+@media screen and (max-width: 767px) {
+  .sample-item {
+    display: block;
+  }
+  .sample-icon:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .sample-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: -30px;
+  margin-top: -30px;
+  }
+  .sample-icon {
+  height: 100%;
+  flex-basis: calc(100% / 2 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .sample-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: -30px;
+  }
+  .sample-icon {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+}
 .describe__sample-title {
   font-weight: 700;
   font-size: 18px;
@@ -10,7 +48,7 @@
 }
 .describe__sample-text {
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   letter-spacing: 0.03em;
   color: #757575;
   text-align: left;
@@ -23,20 +61,20 @@
   border-left: 1px solid #eeeeee;
 }
 
-.sample-item {
-  display: flex;
-  margin-left: -30px;
-  margin-top: -30px;
-  flex-wrap: wrap;
-  text-align: left;
-}
+// .sample-item {
+//   display: flex;
+//   margin-left: -30px;
+//   margin-top: -30px;
+//   flex-wrap: wrap;
+//   text-align: left;
+// }
 
-.sample-icon {
-  background: #ffffff;
-  width: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
-}
+// .sample-icon {
+//   background: #ffffff;
+//   width: calc(100% / 3 - 30px);
+//   margin-left: 30px;
+//   margin-top: 30px;
+// }
 
 .example__sample-link {
   display: block;
@@ -79,5 +117,16 @@
   letter-spacing: 0.03em;
 
   color: #ffffff;
+@media screen and (max-width: 768px) {
+  padding: 77px 24px;
+  } 
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  padding-top: 49px; 
+  padding-bottom: 77px;
+  padding-left: 24px;
+  padding-right: 24px;
+  }
+@media screen and (min-width: 1200px){
   padding: 63px 24px;
+  }
 }

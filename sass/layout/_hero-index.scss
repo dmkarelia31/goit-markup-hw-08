@@ -103,5 +103,10 @@
     color: #FFFFFF;
   }
 }
+@media screen and (max-width: 467px) {
+  .hero-container__text {
+    width: 100%;
+  }
+}
 
 
