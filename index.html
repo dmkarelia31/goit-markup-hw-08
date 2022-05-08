@@ -34,7 +34,7 @@
         
             <ul class="contact">
                 <li class="contact__item"> 
-                    <a class="contact__link" href="mailto:info@devstudio.com">
+                    <a class="contact__link mail" href="mailto:info@devstudio.com">
                         <svg class="contact__svg mail" width="16" height="12">
                         <use href="./images/icons.svg#icon-envelope">
                         </use>
@@ -43,7 +43,7 @@
                     </a>
                 </li>
                 <li class="contact__item"> 
-                    <a class="contact__link" href="tel:+380961111111">
+                    <a class="contact__link phone" href="tel:+380961111111">
                         <svg class="contact__svg phone" width="10" height="16">
                         <use href="./images/icons.svg#icon-smartphone">
                         </use>
@@ -242,7 +242,7 @@
                         srcset="./images/person/person-mobile/mobile-person1.jpg 1x, ./images/person/person-mobile/mobile-person1@2x.jpg 2x"
                         media="(max-width: 767px)" 
                     />
-                    <img src="/" alt="Фото сотрудника 1">
+                    <img class="team-foto" src="/" alt="Фото сотрудника 1">
                     </picture>             
                     <div class="person-card">
                     <h3 class="person-card__name">Игорь Демьяненко</h3>
@@ -294,7 +294,7 @@
                         <source
                             srcset="./images/person/person-mobile/mobile-person2.jpg 1x, ./images/person/person-mobile/mobile-person2@2x.jpg 2x"
                             media="(max-width: 767px)" />
-                        <img src="/" alt="Фото сотрудника 2">
+                        <img class="team-foto" src="/" alt="Фото сотрудника 2">
                     </picture>
                     <div class="person-card">
                     <h3 class="person-card__name">Ольга Репина</h3>
@@ -346,7 +346,7 @@
                         <source
                             srcset="./images/person/person-mobile/mobile-person3.jpg 1x, ./images/person/person-mobile/mobile-person3@2x.jpg 2x"
                             media="(max-width: 767px)" />
-                        <img src="/" alt="Фото сотрудника 3">
+                        <img class="team-foto" src="/" alt="Фото сотрудника 3">
                     </picture>
                     <div class="person-card">
                     <h3 class="person-card__name">Николай Тарасов</h3>
@@ -398,7 +398,7 @@
                         <source
                             srcset="./images/person/person-mobile/mobile-person4.jpg 1x, ./images/person/person-mobile/mobile-person4@2x.jpg 2x"
                             media="(max-width: 767px)" />
-                        <img src="/" alt="Фото сотрудника 4">
+                        <img class="team-foto" src="/" alt="Фото сотрудника 4">
                     </picture>
                     <div class="person-card">
                     <h3 class="person-card__name">Михаил Ермаков</h3>
@@ -636,7 +636,9 @@
 
         <div class="form-field checkbox">
             <input class="checkbox__modal-checkbox visually-hidden" type="checkbox" name="modal-checkbox" id="modal-checkbox">
-        <label class="checkbox__modal-checkbox-text" for="modal-checkbox">Соглашаюсь с рассылкой и принимаю&nbsp;<a class="checkbox__policy-link" href="#">Условия договора</a></label>
+        <label class="checkbox__modal-checkbox-text" for="modal-checkbox">Соглашаюсь с рассылкой и принимаю&nbsp;
+            <a class="checkbox__policy-link" href="#">Условия договора</a>
+        </label>
         </div>  
         <button class="submit-btn text" type="submit">Отправить</button>
        

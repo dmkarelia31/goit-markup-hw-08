@@ -11,6 +11,7 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 .person-card__profession {
   font-size: 16px;
@@ -25,6 +26,9 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
+  .team-foto {
+    margin-bottom: 30px;
   }
 
 @media screen and (max-width: 1200px) {
@@ -49,7 +53,6 @@
 }
   .person-card {
     text-align: center;
-    margin-top: 30px;
   }
   .person-card__profession {
     font-size: 16px;
@@ -57,8 +60,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-top: 10px;
-    margin-bottom: 16px;
   }
 
 
@@ -84,6 +85,8 @@
   }
   .team__title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
   }
   .team__person {
     display: flex;

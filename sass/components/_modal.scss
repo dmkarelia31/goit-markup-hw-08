@@ -16,8 +16,6 @@
 
 
 .modal {
-  // width: 528px;
-  // min-height: 581px;
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -33,7 +31,6 @@
   .modal {
     width: 98%;
     height: 609px;
-    // height: 98%;
   }
 }
 
@@ -87,6 +84,10 @@
   letter-spacing: 0.03em;
   color: #212121;
   margin-bottom: 12px;
+}
+
+.form-field.checkbox{
+  margin-bottom: 30px;
 }
 @media screen and (max-width: 1200px) {
   .form__modal-title {

@@ -11,7 +11,6 @@
 }
 
 .features-title {
-  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -90,6 +89,13 @@
     width: 270px;
     height: 120px;
     display: flex;
+  }
+  .features-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: #212121;
   }
 }
 

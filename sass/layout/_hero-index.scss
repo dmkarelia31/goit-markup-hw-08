@@ -1,12 +1,4 @@
-// Герой (без кнопки)
-// .hero-container{
-//  display: block;
-//  align-items: center;
-// }
 
-// @media screen and (max-width: 768px) {
-  
-// }
   .hero {
   max-width: 1600px;
   margin-left: auto;
@@ -20,7 +12,7 @@
   background-size: cover;
   }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767.98px) {
   .hero {
     width: 100%;
     height: 400px;
@@ -40,7 +32,13 @@
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767.98px) and (max-width: 1199px) {
+    .contact__link.mail {
+      padding-top: 20px;
+    }
+    .contact__link.phone {
+      padding-bottom: 20px;
+    }
   .hero {
     width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -58,7 +56,7 @@
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .hero {
     width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4),
@@ -75,7 +73,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199.98px) {
   .hero-container__text {
     width: 696px;
     margin-left: auto;
@@ -89,7 +87,7 @@
     color: #ffffff;
   }
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199.98px) {
   .hero-container__text {
     width: 360px;
     margin-left: auto;
