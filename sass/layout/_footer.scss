@@ -34,7 +34,14 @@
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
+  transition: font-style 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contacts__footer-address:hover,
+.contacts__footer-address:focus {
+  color: var(--accent-bg-color);
+  font-style: italic;
+}
+
 
 
 .footer-item>.contacts__contact-list:not(:last-child) {
@@ -57,7 +64,15 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+  transition: font-style 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.contacts__footer-contact:hover,
+.contacts__footer-contact:focus {
+  color: var(--accent-bg-color);
+  font-style: italic;
+}
+
+
 
 // /* Присоединяйтесь */
 @media screen and (max-width: 768px) {

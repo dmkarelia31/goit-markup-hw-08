@@ -82,7 +82,7 @@
         visibility: visible;
         pointer-events: auto;
     }
-@media screen and (min-width: 767.98px) {
+@media screen and (min-width: 768px) {
     display: none;
     }
 }
@@ -153,8 +153,8 @@
 
 
 
-// Хедер для планшета 767.98px - 1199.98px
-@media screen and (min-width: 767.98px) {
+// Хедер для планшета 768px - 1200px
+@media screen and (min-width: 768px) {
     .navigation {
         display: flex;
         align-items: center;
@@ -167,7 +167,14 @@
         display: none;
     }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+    .contact__link.mail {
+        padding-top: 20px;
+    }
+    .contact__link.phone {
+        padding-bottom: 20px;
+    }
+}
 .nav-list {
   display: flex;
   align-items: center;
@@ -188,7 +195,6 @@
   &:hover,
   &:focus {
     color: #2196f3;
-    // outline: none;
   }
   &.current{
       color: var(--accent-bg-color);
@@ -230,7 +236,6 @@
       &:hover,
       &:focus {
         color: var(--accent-bg-color);
-        // outline: none;
       }
     }
     .contact__svg {
@@ -238,8 +243,8 @@
         fill: currentColor;
     }
 
-// Хедер для планшета 1199.98px +
-@media screen and (min-width: 1199.98px) {
+// Хедер для планшета 1200px +
+@media screen and (min-width: 1200px) {
     .navigation {
         display: block;
     }
@@ -262,7 +267,8 @@
         margin-right: 10px;
     }
 }
-@media screen and (max-width: 1199px) {
+
+@media screen and (max-width: 1199.98px) {
     .contact__svg.mail {
         width: 14px;
         height: 10px;
