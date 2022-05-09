@@ -1338,18 +1338,15 @@ ul {
   }
   .example__sample-link {
     display: flex;
+    flex-direction: column;
     height: 100%;
   }
   .sample-icon {
-    flex-basis: calc(100% / 2 - 30px);
+    width: calc(100% / 2 - 30px);
     margin-left: 30px;
     margin-top: 30px;
   }
   .thumb {
-    display: flex;
-    flex-direction: column;
-  }
-  .sample-content.describe {
     flex-grow: 1;
   }
 }
